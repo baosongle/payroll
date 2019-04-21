@@ -1,4 +1,4 @@
-package com.github.songlebao.payroll.model;
+package com.github.songlebao.payroll.model.classification;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

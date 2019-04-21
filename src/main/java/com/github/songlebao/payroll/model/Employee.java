@@ -1,5 +1,8 @@
 package com.github.songlebao.payroll.model;
 
+import com.github.songlebao.payroll.model.classification.PaymentClassification;
+import com.github.songlebao.payroll.model.method.PaymentMethod;
+import com.github.songlebao.payroll.model.schedule.PaymentSchedule;
 import lombok.Data;
 
 @Data
