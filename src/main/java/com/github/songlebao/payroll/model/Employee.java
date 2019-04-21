@@ -5,6 +5,8 @@ import com.github.songlebao.payroll.model.method.PaymentMethod;
 import com.github.songlebao.payroll.model.schedule.PaymentSchedule;
 import lombok.Data;
 
+import java.time.LocalDate;
+
 @Data
 public class Employee {
     private Integer empId;
@@ -14,4 +16,12 @@ public class Employee {
     private PaymentClassification paymentClassification;
     private PaymentSchedule paymentSchedule;
     private PaymentMethod paymentMethod;
+
+    public boolean isPayDate(LocalDate date) {
+        return paymentSchedule.isPayDate(date);
+    }
+
+    public void payDay(Paycheck paycheck) {
+
+    }
 }
