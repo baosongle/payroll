@@ -22,6 +22,11 @@ public class Employee {
     }
 
     public void payDay(Paycheck paycheck) {
-
+        Double grossPay = paymentClassification.calculatePay(paycheck);
+        // 目前没有计算参加各种协会的扣款
+        paycheck.setGrossPay(grossPay);
+        paycheck.setDeductions(0D);
+        paycheck.setNetPay(grossPay);
+        paymentMethod.pay(paycheck);
     }
 }
